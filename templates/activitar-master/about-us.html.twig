@@ -14,14 +14,16 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    {% block stylesheets %}
+        <link href="{{ asset('bundles/activitar/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/activitar/css/font-awesome.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/activitar/css/elegant-icons.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/activitar/css/nice-select.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/activitar/css/owl.carousel.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/activitar/css/magnific-popup.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/activitar/css/slicknav.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('bundles/activitar/css/style.css') }}" rel="stylesheet">
+    {% endblock %}
 </head>
 
 <body>
@@ -394,15 +396,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{{ asset('bundles/activitar/js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ asset('bundles/activitar/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('bundles/activitar/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('bundles/activitar/js/mixitup.min.js') }}"></script>
+    <script src="{{ asset('bundles/activitar/js/jquery.nice-select.min.js') }}"></script>
+    <script src="{{ asset('bundles/activitar/js/jquery.slicknav.js') }}"></script>
+    <script src="{{ asset('bundles/activitar/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('bundles/activitar/js/masonry.pkgd.min.js') }}"></script>
+    <script src="{{ asset('bundles/activitar/js/main.js') }}"></script>
 </body>
 
 </html>

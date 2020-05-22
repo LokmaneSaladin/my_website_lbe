@@ -15,4 +15,12 @@ class ActivitarController extends AbstractController
     {
         return $this->render('activitar-master/index.html.twig');
     }
+
+    /**
+    * @Route("/activitar/about-us")
+    */
+    public function aboutUs()
+    {
+        return $this->render('activitar-master/about-us.html.twig');
+    }
 }
